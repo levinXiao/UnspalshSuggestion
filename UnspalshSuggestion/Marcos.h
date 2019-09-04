@@ -14,6 +14,11 @@
 
 #define UI_IS_IPHONE      [[UIDevice currentDevice].model isEqualToString:@"iPhone"]
 
-#define UI_IS_IPHONE_X    (UI_IS_IPHONE && ((SCREEN_WIDTH/SCREEN_HEIGHT) < 0.5))
+#define UI_IS_IPHONE_X \
+({BOOL isPhoneX = NO;\
+if (@available(iOS 11.0, *)) {\
+isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+}\
+(isPhoneX);})
 
 #define UI_STATUSBAR_HEIGHT         (UI_IS_IPHONE_X ? 44.f : 20.f)

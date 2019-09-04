@@ -63,14 +63,6 @@
 
 @synthesize image, backTiledView;
 
-//- (void)dealloc {
-//    [frontTiledView release];
-//    self.backTiledView = nil;
-//    [backgroundImageView release];
-//    [image release];
-//    //--
-//    [super dealloc];
-//}
 -(id)initWithFrame:(CGRect)frame image:(UIImage*)img {
     if((self = [super initWithFrame:frame])) {
         // Set up the UIScrollView
@@ -82,14 +74,10 @@
         self.currentScale = 1.f;
         self.maximumZoomScale = kMaxZoomScale;
         self.minimumZoomScale = 0.25;
-//        self.backgroundColor = [UIColor colorWithRed:0.4f green:0.2f blue:0.2f alpha:1.0f];
-        // determine the size of the image
         self.image = img;
         CGRect imageRect = CGRectMake(0.0f,0.0f,CGImageGetWidth(image.CGImage),CGImageGetHeight(image.CGImage));
         imageScale = self.frame.size.width/imageRect.size.width;
-//        minimumScale = imageScale * 0.75f;
         minimumScale = imageScale;
-        NSLog(@"imageScale: %f",imageScale);
         imageRect.size = CGSizeMake(imageRect.size.width*imageScale, imageRect.size.height*imageScale);
         // Create a low res image representation of the image to display before the TiledImageView
         // renders its content.
@@ -117,7 +105,6 @@
         [self addGestureRecognizer:doubleClick];
         
         [singleClick requireGestureRecognizerToFail:doubleClick];
-//        [frontTiledView release];
     }
     return self;
 }
