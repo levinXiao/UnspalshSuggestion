@@ -27,7 +27,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // 通用设置
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [UIColor whiteColor];
 
@@ -41,7 +40,6 @@
 }
 
 #pragma mark - private
-/// 布局界面
 - (void)layoutUI {
     self.title = @"推荐";
     
@@ -133,7 +131,7 @@
             LargeImageDownsizingViewController *vc = [[LargeImageDownsizingViewController alloc] init];
             vc.view.backgroundColor = UIColor.whiteColor;
             USPhotoListCell *cell = [tableview cellForRowAtIndexPath:indexPath];
-            if (cell) {
+            if (cell.photoView.image) {
                 vc.thumbImage = cell.photoView.image;
             }
             vc.model = self.dataArr[indexPath.row];

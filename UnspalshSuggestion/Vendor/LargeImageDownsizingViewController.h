@@ -83,15 +83,15 @@
 }
 // destImage property is specifically thread safe (i.e. no 'nonatomic' attribute)
 // because it is accessed off the main thread.
-@property (retain) UIImage* destImage;
+@property (retain) UIImage *destImage;
 
 
--(void)initializeScrollView:(UIImage *)arg;
+- (void)initializeScrollView:(UIImage *)arg;
 
 
 /// 图片url
-@property (nonatomic, strong)USPhotoModel * model;
+@property (nonatomic, strong) USPhotoModel * model;
 /// 缩略图
-@property (nonatomic, strong)UIImage *thumbImage;
+@property (nonatomic, strong) UIImage *thumbImage;
 
 @end

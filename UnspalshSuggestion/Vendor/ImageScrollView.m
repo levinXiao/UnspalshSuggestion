@@ -82,7 +82,7 @@
         self.currentScale = 1.f;
         self.maximumZoomScale = kMaxZoomScale;
         self.minimumZoomScale = 0.25;
-        self.backgroundColor = [UIColor colorWithRed:0.4f green:0.2f blue:0.2f alpha:1.0f];
+//        self.backgroundColor = [UIColor colorWithRed:0.4f green:0.2f blue:0.2f alpha:1.0f];
         // determine the size of the image
         self.image = img;
         CGRect imageRect = CGRectMake(0.0f,0.0f,CGImageGetWidth(image.CGImage),CGImageGetHeight(image.CGImage));
@@ -168,8 +168,6 @@
     // Create a new TiledImageView based on new frame and scaling.
     frontTiledView = [[TiledImageView alloc] initWithFrame:imageRect image:image scale:imageScale];
     [self addSubview:frontTiledView];
-//    frontTiledView = nil;
-//    [frontTiledView release];
 }
 
 

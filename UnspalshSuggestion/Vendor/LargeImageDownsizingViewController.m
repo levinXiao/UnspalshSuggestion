@@ -225,12 +225,10 @@
 
 #pragma mark - 图片界面代理
 - (void)ImageScrollViewNeedCloseVCWithView:(ImageScrollView *)view {
-    [self dismissViewControllerAnimated:NO completion:^{
+    [self dismissViewControllerAnimated:YES completion:^{
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            
-                [[SDImageCache sharedImageCache] removeImageForKey:[[SDWebImageManager sharedManager] cacheKeyForURL:[NSURL URLWithString:self.model.urls.raw]] fromDisk:NO withCompletion:nil];
+            [[SDImageCache sharedImageCache] removeImageForKey:[[SDWebImageManager sharedManager] cacheKeyForURL:[NSURL URLWithString:self.model.urls.raw]] fromDisk:NO withCompletion:nil];
         });
-
     }];
 }
 
