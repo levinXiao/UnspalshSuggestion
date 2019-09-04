@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36EAF9B4CCD580E9D0A49CCD /* libPods-UnspalshSuggestion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4F950BA67360B5C786B4EB /* libPods-UnspalshSuggestion.a */; };
 		B809437C231EA8D900D87F33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B809437B231EA8D900D87F33 /* AppDelegate.m */; };
 		B809437F231EA8D900D87F33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B809437E231EA8D900D87F33 /* ViewController.m */; };
 		B8094382231EA8D900D87F33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8094380231EA8D900D87F33 /* Main.storyboard */; };
 		B8094384231EA8D900D87F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8094383231EA8D900D87F33 /* Assets.xcassets */; };
 		B8094387231EA8D900D87F33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8094385231EA8D900D87F33 /* LaunchScreen.storyboard */; };
 		B809438A231EA8D900D87F33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8094389231EA8D900D87F33 /* main.m */; };
+		B8094398231EAB1400D87F33 /* USPhotoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8094396231EAB1400D87F33 /* USPhotoListCell.m */; };
+		B809439E231EAB1C00D87F33 /* USPhotoUrlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B809439A231EAB1C00D87F33 /* USPhotoUrlModel.m */; };
+		B809439F231EAB1C00D87F33 /* USPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B809439B231EAB1C00D87F33 /* USPhotoModel.m */; };
+		B80943A8231EAB2700D87F33 /* LargeImageDownsizingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B80943A1231EAB2700D87F33 /* LargeImageDownsizingViewController.m */; };
+		B80943A9231EAB2700D87F33 /* TiledImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B80943A2231EAB2700D87F33 /* TiledImageView.m */; };
+		B80943AA231EAB2700D87F33 /* MBProgressHUD+USHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B80943A6231EAB2700D87F33 /* MBProgressHUD+USHUD.m */; };
+		B80943AB231EAB2700D87F33 /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B80943A7231EAB2700D87F33 /* ImageScrollView.m */; };
+		B80943B5231EAC6A00D87F33 /* USJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B80943AD231EAC6A00D87F33 /* USJSONResponseSerializer.m */; };
+		B80943B7231EAC6A00D87F33 /* USNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B80943B0231EAC6A00D87F33 /* USNetworkCache.m */; };
+		B80943B8231EAC6A00D87F33 /* USNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = B80943B1231EAC6A00D87F33 /* USNetworkService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +37,31 @@
 		B8094386231EA8D900D87F33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8094388231EA8D900D87F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8094389231EA8D900D87F33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B8094393231EAA7800D87F33 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B8094396231EAB1400D87F33 /* USPhotoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USPhotoListCell.m; sourceTree = "<group>"; };
+		B8094397231EAB1400D87F33 /* USPhotoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USPhotoListCell.h; sourceTree = "<group>"; };
+		B809439A231EAB1C00D87F33 /* USPhotoUrlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USPhotoUrlModel.m; sourceTree = "<group>"; };
+		B809439B231EAB1C00D87F33 /* USPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USPhotoModel.m; sourceTree = "<group>"; };
+		B809439C231EAB1C00D87F33 /* USPhotoUrlModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USPhotoUrlModel.h; sourceTree = "<group>"; };
+		B809439D231EAB1C00D87F33 /* USPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USPhotoModel.h; sourceTree = "<group>"; };
+		B80943A0231EAB2700D87F33 /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollView.h; sourceTree = "<group>"; };
+		B80943A1231EAB2700D87F33 /* LargeImageDownsizingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LargeImageDownsizingViewController.m; sourceTree = "<group>"; };
+		B80943A2231EAB2700D87F33 /* TiledImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledImageView.m; sourceTree = "<group>"; };
+		B80943A3231EAB2700D87F33 /* MBProgressHUD+USHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+USHUD.h"; sourceTree = "<group>"; };
+		B80943A4231EAB2700D87F33 /* TiledImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledImageView.h; sourceTree = "<group>"; };
+		B80943A5231EAB2700D87F33 /* LargeImageDownsizingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LargeImageDownsizingViewController.h; sourceTree = "<group>"; };
+		B80943A6231EAB2700D87F33 /* MBProgressHUD+USHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+USHUD.m"; sourceTree = "<group>"; };
+		B80943A7231EAB2700D87F33 /* ImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScrollView.m; sourceTree = "<group>"; };
+		B80943AD231EAC6A00D87F33 /* USJSONResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USJSONResponseSerializer.m; sourceTree = "<group>"; };
+		B80943AE231EAC6A00D87F33 /* USNetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USNetworkService.h; sourceTree = "<group>"; };
+		B80943B0231EAC6A00D87F33 /* USNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USNetworkCache.m; sourceTree = "<group>"; };
+		B80943B1231EAC6A00D87F33 /* USNetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USNetworkService.m; sourceTree = "<group>"; };
+		B80943B2231EAC6A00D87F33 /* USJSONResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USJSONResponseSerializer.h; sourceTree = "<group>"; };
+		B80943B4231EAC6A00D87F33 /* USNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USNetworkCache.h; sourceTree = "<group>"; };
+		B80943BA231EAF5B00D87F33 /* Marcos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marcos.h; sourceTree = "<group>"; };
+		CB078F73B3A1FCB256270DA4 /* Pods-UnspalshSuggestion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnspalshSuggestion.release.xcconfig"; path = "Target Support Files/Pods-UnspalshSuggestion/Pods-UnspalshSuggestion.release.xcconfig"; sourceTree = "<group>"; };
+		D6D547F13A25D4DB40C4936D /* Pods-UnspalshSuggestion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnspalshSuggestion.debug.xcconfig"; path = "Target Support Files/Pods-UnspalshSuggestion/Pods-UnspalshSuggestion.debug.xcconfig"; sourceTree = "<group>"; };
+		EC4F950BA67360B5C786B4EB /* libPods-UnspalshSuggestion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnspalshSuggestion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +69,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36EAF9B4CCD580E9D0A49CCD /* libPods-UnspalshSuggestion.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03369931CE1C0CC1A1A33D2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6D547F13A25D4DB40C4936D /* Pods-UnspalshSuggestion.debug.xcconfig */,
+				CB078F73B3A1FCB256270DA4 /* Pods-UnspalshSuggestion.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B809436E231EA8D900D87F33 = {
 			isa = PBXGroup;
 			children = (
 				B8094379231EA8D900D87F33 /* UnspalshSuggestion */,
 				B8094378231EA8D900D87F33 /* Products */,
+				03369931CE1C0CC1A1A33D2F /* Pods */,
+				EECC888548A5C348261C2FFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,13 +110,75 @@
 				B809437B231EA8D900D87F33 /* AppDelegate.m */,
 				B809437D231EA8D900D87F33 /* ViewController.h */,
 				B809437E231EA8D900D87F33 /* ViewController.m */,
-				B8094380231EA8D900D87F33 /* Main.storyboard */,
-				B8094383231EA8D900D87F33 /* Assets.xcassets */,
-				B8094385231EA8D900D87F33 /* LaunchScreen.storyboard */,
-				B8094388231EA8D900D87F33 /* Info.plist */,
-				B8094389231EA8D900D87F33 /* main.m */,
+				B8094397231EAB1400D87F33 /* USPhotoListCell.h */,
+				B8094396231EAB1400D87F33 /* USPhotoListCell.m */,
+				B80943AC231EAC6A00D87F33 /* Networking */,
+				B8094399231EAB1C00D87F33 /* Model */,
+				B8094392231EA96900D87F33 /* Vendor */,
+				B8094390231EA8E300D87F33 /* Supporting Files */,
+				B8094393231EAA7800D87F33 /* PrefixHeader.pch */,
+				B80943BA231EAF5B00D87F33 /* Marcos.h */,
 			);
 			path = UnspalshSuggestion;
+			sourceTree = "<group>";
+		};
+		B8094390231EA8E300D87F33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8094380231EA8D900D87F33 /* Main.storyboard */,
+				B8094388231EA8D900D87F33 /* Info.plist */,
+				B8094383231EA8D900D87F33 /* Assets.xcassets */,
+				B8094389231EA8D900D87F33 /* main.m */,
+				B8094385231EA8D900D87F33 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8094392231EA96900D87F33 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B80943A0231EAB2700D87F33 /* ImageScrollView.h */,
+				B80943A7231EAB2700D87F33 /* ImageScrollView.m */,
+				B80943A5231EAB2700D87F33 /* LargeImageDownsizingViewController.h */,
+				B80943A1231EAB2700D87F33 /* LargeImageDownsizingViewController.m */,
+				B80943A3231EAB2700D87F33 /* MBProgressHUD+USHUD.h */,
+				B80943A6231EAB2700D87F33 /* MBProgressHUD+USHUD.m */,
+				B80943A4231EAB2700D87F33 /* TiledImageView.h */,
+				B80943A2231EAB2700D87F33 /* TiledImageView.m */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		B8094399231EAB1C00D87F33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B809439D231EAB1C00D87F33 /* USPhotoModel.h */,
+				B809439B231EAB1C00D87F33 /* USPhotoModel.m */,
+				B809439C231EAB1C00D87F33 /* USPhotoUrlModel.h */,
+				B809439A231EAB1C00D87F33 /* USPhotoUrlModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B80943AC231EAC6A00D87F33 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B80943B2231EAC6A00D87F33 /* USJSONResponseSerializer.h */,
+				B80943AD231EAC6A00D87F33 /* USJSONResponseSerializer.m */,
+				B80943B4231EAC6A00D87F33 /* USNetworkCache.h */,
+				B80943B0231EAC6A00D87F33 /* USNetworkCache.m */,
+				B80943AE231EAC6A00D87F33 /* USNetworkService.h */,
+				B80943B1231EAC6A00D87F33 /* USNetworkService.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		EECC888548A5C348261C2FFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC4F950BA67360B5C786B4EB /* libPods-UnspalshSuggestion.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B809438D231EA8D900D87F33 /* Build configuration list for PBXNativeTarget "UnspalshSuggestion" */;
 			buildPhases = (
+				EEEC991BFB505084211C7972 /* [CP] Check Pods Manifest.lock */,
 				B8094373231EA8D900D87F33 /* Sources */,
 				B8094374231EA8D900D87F33 /* Frameworks */,
 				B8094375231EA8D900D87F33 /* Resources */,
+				860D6A7599EC81372F48876F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,14 +248,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		860D6A7599EC81372F48876F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UnspalshSuggestion/Pods-UnspalshSuggestion-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UnspalshSuggestion/Pods-UnspalshSuggestion-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEEC991BFB505084211C7972 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UnspalshSuggestion-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B8094373231EA8D900D87F33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B809439F231EAB1C00D87F33 /* USPhotoModel.m in Sources */,
+				B80943AA231EAB2700D87F33 /* MBProgressHUD+USHUD.m in Sources */,
 				B809437F231EA8D900D87F33 /* ViewController.m in Sources */,
+				B8094398231EAB1400D87F33 /* USPhotoListCell.m in Sources */,
+				B80943B5231EAC6A00D87F33 /* USJSONResponseSerializer.m in Sources */,
+				B80943A9231EAB2700D87F33 /* TiledImageView.m in Sources */,
+				B80943A8231EAB2700D87F33 /* LargeImageDownsizingViewController.m in Sources */,
 				B809438A231EA8D900D87F33 /* main.m in Sources */,
+				B80943B8231EAC6A00D87F33 /* USNetworkService.m in Sources */,
+				B809439E231EAB1C00D87F33 /* USPhotoUrlModel.m in Sources */,
 				B809437C231EA8D900D87F33 /* AppDelegate.m in Sources */,
+				B80943B7231EAC6A00D87F33 /* USNetworkCache.m in Sources */,
+				B80943AB231EAB2700D87F33 /* ImageScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,10 +452,12 @@
 		};
 		B809438E231EA8D900D87F33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D547F13A25D4DB40C4936D /* Pods-UnspalshSuggestion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3P58B2GW28;
+				GCC_PREFIX_HEADER = UnspalshSuggestion/PrefixHeader.pch;
 				INFOPLIST_FILE = UnspalshSuggestion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,10 +471,12 @@
 		};
 		B809438F231EA8D900D87F33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB078F73B3A1FCB256270DA4 /* Pods-UnspalshSuggestion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3P58B2GW28;
+				GCC_PREFIX_HEADER = UnspalshSuggestion/PrefixHeader.pch;
 				INFOPLIST_FILE = UnspalshSuggestion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
